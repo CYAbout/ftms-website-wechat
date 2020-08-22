@@ -1,0 +1,75 @@
+.mine_spoor {
+  .spoor_content {
+    // padding: .6rem 0 0;
+    .my_step {
+      padding: .6rem 0;
+      .step_item {
+        display: flex;
+        justify-content: flex-start;
+        font-size: .24rem;
+        color: #999999;
+        position: relative;
+        margin-bottom: .5rem;
+        .step_title {
+          min-width: 1.4rem;
+        }
+        .step_icon {
+          margin-right: .25rem;
+          img {
+            width: .25rem;
+            height: .25rem;
+          }
+        }
+        .step_content {
+          min-height: 1rem;
+          flex: 1;
+          .spoor_header {
+            height: .6rem;
+            line-height: .6rem;
+            background: #d3b07a;
+            padding: 0 .3rem;
+            color: #ffffff;
+            font-size: .24rem;
+            .spoor_footer {
+              background: url(../../../imgs/icon-footer.png) no-repeat;
+              background-size: contain;
+              width: .32rem;
+              height: .32rem;
+              display: inline-block;
+              transform: translateY(2px);
+              margin-right: .2rem;
+            }
+          }
+          .info {
+            padding: .39rem .63rem .39rem .78rem;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            line-height: 1.5;
+            color: #333333;
+          }
+        }
+        .step_tail {
+          height: 100%;
+          position: absolute;
+          left: .12rem;
+          top: .12rem;
+          padding: .24rem 0;
+          
+        }
+        &:not(:last-child) {
+          .step_tail {
+            &::after {
+              height: 100%;
+              width: 1px;
+              background: rgba(0,0,0,0.2);
+              content: "";
+              display: inline-block;
+            }
+          }
+        }
+        &.current {
+          color: #333333;
+        }
+      }
+    }  
+  }
+}

@@ -1,0 +1,300 @@
+.home {
+
+  .t {
+    position: relative;
+    height: 10.6rem;
+    .tabs {
+      // padding: 0 .3rem;
+      height: 100%;
+    }
+    .swiper-wrapper {
+      height: 10.6rem;
+
+    }
+    .swiper-pagination {
+      display: inline-block;
+      right: 0 !important;
+      top: 50% !important;
+      transform: rotateZ(90deg);
+      width: auto !important;
+      left: auto;
+      bottom: auto;
+      .swiper-pagination-bullet {
+        margin: .08rem;
+      }
+    }
+    .swiper-pagination-bullet {
+      box-sizing: border-box;
+      border: 2px solid #fff;
+      margin: 8px 0;
+      background-color: transparent;
+    }
+    .swiper-pagination-bullet-active {
+      background-color: #fff;
+    }
+    .v-item {
+      position: relative;
+      overflow: hidden;
+      a {
+        width: 100%;
+        height: 100%;
+      }
+      img {
+        height: 100%;
+        width: 100%;
+      }
+      .text {
+        position: absolute;
+        top: 1rem;
+        left: .7rem;
+        color: #fff;
+        font-size: .4rem;
+        font-weight: 700;
+        line-height: 2;
+      }
+    }
+    .modal {
+      position: absolute;
+      z-index: 10;
+      left: 0;
+      bottom: 0;
+      height: .7rem;
+      width: 100%;
+    }
+
+    .car-nav {
+      position: absolute;
+      z-index: 10;
+      bottom: .7rem;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 6.9rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(255, 255, 255, .8);
+      height: .8rem;
+      border-radius: .4rem;
+      box-shadow: 2px 5px 5px rgba(0, 0, 0, .2);
+      overflow: hidden;
+
+      .am-segment {
+        width: 100%;
+        height: 100%;
+        &>.am-segment-item:last-child {
+          &::after {
+            display: none;
+          }
+        }
+      }
+      .am-segment-item {
+        position: relative;
+        font-size: .24rem;
+        color: #000 !important;
+        border: 0 none !important;
+        &::after {
+          position: absolute;
+          right: 0;
+          content: '';
+          width: 1px;
+          height: .3rem;
+          background-color: #000;
+        }
+      }
+      // 动态处理边框
+      .box1 {
+        &>.am-segment-item:nth-child(1) {
+          &::after {
+            display: none;
+          }
+        }
+      }
+      .box2 {
+        &>.am-segment-item:nth-child(2) {
+          &::after {
+            display: none;
+          }
+        }
+      }
+      .box3 {
+        &>.am-segment-item:nth-child(3) {
+          &::after {
+            display: none;
+          }
+        }
+      }
+      .am-segment-item-selected {
+        color:  #fff !important;
+        &::after {
+          display: none;
+        }
+      }
+    }
+    .flex-2 {
+      .am-segment-item {
+        &::after {
+          // display: inline-block !important;
+          position: absolute;
+          right: 0;
+          content: '';
+          width: 1px;
+          height: .3rem;
+          background-color: #000;
+        }
+      }
+      .am-segment-item:last-child {
+        flex: 2;
+        background-color: transparent !important;
+        color: #000 !important;
+        &::after {
+          display: none !important;
+        }
+      }
+    }
+  }
+  .b {
+    margin: .8rem 0 .8rem;
+    li {
+      position: relative;
+      width: 6.9rem;
+      height: 4rem;
+      margin: .2rem auto;
+      background-color: #eee;
+      overflow: hidden;
+      // a {
+      //   width: 100%;
+      //   height: 100%;
+      // }
+      img {
+        width: 100%;
+      }
+      a,
+      span {
+        position: absolute;
+        left: 50%;
+        bottom: .4rem;
+        transform: translate(-50%,0);
+        width: 2.3rem;
+        height: .64rem;
+        line-height: .64rem;
+        text-align: center;
+        color: #000;
+        background-color: hsla(0,0%,100%,.6);
+        border-radius: .32rem;
+      }
+    }
+  }
+  .lucky {
+    width: 2.15rem;
+    height: 1.66rem;
+    position: fixed;
+    bottom: 1.58rem;
+    right: .18rem;
+    z-index: 11;
+    img {
+      width: 100%;
+    }
+  }
+}
+// .search {
+//   position: absolute;
+//   right: 0;
+//   left: 0;
+//   // z-index: 1000;
+//   width: 100%;
+//   max-height: 90vh;
+//   overflow: auto;
+//   transition: height .5s;
+//   background-color: #fff;
+//   // touch-action: none;
+// }
+
+.search {
+  padding:  .3rem;
+  .search-label {
+    height: .7rem;
+    padding-bottom: .4rem;
+  }
+  .search-input {
+    display: flex;
+    padding: .2rem 0 .4rem;
+    .l {
+      flex: 1;
+    }
+    .r {
+      width: .84rem;
+      margin-left: .2rem;
+    }
+    .am-list-item {
+      padding-left: 0;
+      height: .7rem !important;
+      min-height: .7rem !important;
+    }
+    .am-list-line {
+      box-sizing: border-box;
+      height: 100%;
+      border: 1px solid #dadada;
+      border-radius: 2px;
+    }
+  }
+  .finded {
+    padding: .4rem 0;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+    span {
+      color: #e50020;
+      font-weight: 700;
+    }
+  }
+  .search-data {
+    // padding-bottom: .7rem;
+    li {
+      padding: .4rem 0;
+      line-height: 1;
+      border-bottom: 1px solid #dadada;
+      h3 {
+        padding-bottom: .2rem;
+        font-size: .26rem;
+        color: #000;
+        font-weight: 700;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+        .colorTxt {
+          color: #e50020;
+        }
+      }
+
+      p.content {
+        position: relative;
+        color: #333;
+        font-size: .24rem;
+        line-height: 1.4;
+        overflow: hidden;  
+        text-overflow: ellipsis;  
+        display: -webkit-box;  
+        -webkit-line-clamp: 3;
+        /* autoprefixer: off */
+        -webkit-box-orient: vertical;
+        /* autoprefixer: on */
+        .colorTxt {
+          color: #e50020;
+        }
+      }
+      p.url {
+        color: #b9b9b9;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+        line-height: 1.4;
+      }
+
+      div {
+        color: #b9b9b9;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+}

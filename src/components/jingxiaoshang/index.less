@@ -1,0 +1,130 @@
+.jingxiaoshang {
+  .two-label {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: .4rem;
+    &>div {
+      width: 48%;
+    }
+  }
+  .serach-jieguo {
+    padding: .2rem 0 .4rem;
+    font-size: .24rem;
+  }
+  .my-map {
+    width: 100%;
+    height: 6.8rem;
+    border: 1px solid #eee;
+    overflow: hidden;
+  }
+  .address-list {
+    height: 5.6rem;
+    overflow: hidden;
+    overflow-y: scroll;
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+    margin-top: .6rem;
+    padding-bottom: .3rem;
+    ul {
+      margin: 0 .2rem .3rem;
+    }
+    li {
+      border-bottom: 1px solid #eee;
+      color: #000;
+      .top {
+        font-size: .26rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .bottom {
+        font-size: .24rem;
+        padding-left: .46rem;
+        line-height: 1.4;
+        padding-bottom: .4rem;
+        &>div{
+          line-height: 1.4;
+        }
+        .btn{
+          width: 2.7rem;
+          height: .75rem;
+          line-height: .75rem;
+          border-radius: .375rem;
+          background-color: #d3b078;
+          color: #ffffff;
+          font-size: .3rem;
+          text-align: center;
+          margin-top: .4rem;
+          >img{
+              width: .3rem;
+              height: .3rem;
+              vertical-align: middle;
+              margin-right: .1rem;
+          }
+        }
+      }
+      .address-text {
+        position: relative;
+        display: flex;
+        align-items: center;
+        font-size: .26rem;
+        font-weight: 700;
+        height: .84rem;
+        .xuhao {
+          font-size: .24rem;
+          color: #fff;
+          display: inline-block;
+          line-height: .34rem;
+          text-align: center;
+          width: .36rem;
+          height: .46rem;
+          margin-right: .2rem;
+          background-image: url('../../imgs/address-0.png');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+        }
+      }
+      .num {
+        font-weight: 700;
+      }
+    }
+    li.checked {
+      .address-text {
+        color: #d3b07a;
+        .xuhao {
+          background-image: url('../../imgs/radio-1.png');
+        }
+      }
+      .num {
+        color: #d3b07a;
+      }
+    }
+  }
+
+  .address-list::-webkit-scrollbar-track-piece {
+    background-color: rgba(0, 0, 0, 0);
+    border-left: 1px solid rgba(0, 0, 0, 0);
+  }
+  .address-list::-webkit-scrollbar {
+    width: 5px;
+    height: 13px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+  .address-list::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-clip: padding-box;
+    // -webkit-border-radius: 5px;
+    // -moz-border-radius: 5px;
+    // border-radius: 5px;
+    // min-height: 28px;
+  }
+  .address-list::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+}

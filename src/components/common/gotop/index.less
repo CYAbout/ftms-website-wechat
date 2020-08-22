@@ -1,0 +1,126 @@
+
+.fiexd-btn {
+  position: fixed;
+  z-index: 11;
+  bottom: 3.5rem;
+  right: .2rem;
+  color: #fff;
+  font-size: .24rem;
+  .gotop {
+    .goback-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      box-sizing: border-box;
+      padding: .1rem;
+      width: .9rem;
+      height: .9rem;
+      border-radius: .45rem;
+      overflow: hidden;
+      background: rgba(51, 51, 51, .8);
+    }
+  }
+  .top-btn {
+    width: .9rem;
+    height: .9rem;
+    overflow: hidden;
+    border-radius: .45rem;
+    margin-bottom: .2rem;
+    background-color: #d3b078;
+    img {
+      width: 100%;
+      height: 100%;
+
+    }
+  }
+  .fix-btn,
+  .fz {
+    box-sizing: border-box;
+    width: 100%;
+    // padding: 2px;
+    height:1.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+    img {
+      width: .24rem;
+      height: auto;
+      // max-height: .28rem;
+    }
+    span {
+      padding-top: 3px;
+    }
+  }
+  .fz {
+    border-bottom: 0 none;
+    // padding: 0 .12rem;
+    width: .66rem;
+    margin: 0 auto;
+    &:last-child {
+      border-bottom: 1px dashed #fff;
+    }
+    img {
+      width: .4rem;
+      height: auto;
+    }
+  }
+  .share {
+    // height: 0;
+    transition: bottom 1s;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: -100%;
+    background: #ffffff;
+    box-shadow: 0 0 10px #eee;
+    >div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      .title {
+        font-size: .24rem;
+        color: rgb(125, 125, 125);
+        margin: .4rem .27rem .3rem .29rem;
+      }
+      .url {
+        font-size: .24rem;
+        color: rgb(0, 0, 0);
+        margin: 0 .27rem 0 .29rem;
+        word-break: break-all;
+        line-height: 1.5;
+      }
+      .line {
+        width: 100%;
+        height: 1px;
+        background: #333333;
+        margin: .33rem 0;
+      }
+    }
+    a {
+      display: block;
+      // margin: 0 auto;
+      margin-bottom: .33rem;
+      color: #333333;
+      height: .5rem;
+      line-height: .5rem;
+      text-align: center;
+      font-size: .3rem;
+    }
+    &.in {
+      // height: 3.5rem;
+      bottom: 0;
+    }
+  }
+}
+.my-drawer-gotop {
+  min-width: 100vw;
+  // height: 2rem;
+  position: fixed;
+  bottom: 0;
+}

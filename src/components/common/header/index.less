@@ -1,0 +1,225 @@
+.header {
+  position: fixed;
+  z-index: 998;
+  height: .9rem;
+  background-color: #fff;
+  border: 0px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  left: 0;
+  top: 0;
+  right: 0;
+  max-width: 750px;
+  margin: 0 auto;
+  header {
+    display: flex;
+    // height: .9rem;
+    padding: 0 .4rem;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    img {
+      width: 100%;
+    }
+  }
+  .finded {
+    padding-top: .2rem;
+    span {
+      color: #d3b079;
+      font-weight: 700;
+    }
+  }
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: .4rem;
+      height: .4rem;
+      padding: .25rem;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    // li {
+    //   box-sizing: content-box;
+    //   height: 0.28rem;
+    //   padding: 0.28rem 0.3rem 0.39rem;
+    //   img {
+    //     height: 100%;
+    //   }
+    // }
+  }
+
+  .search {
+    display: flex;
+    padding: 0 .3rem;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow: hidden;
+    .search-input {
+      display: flex;
+
+      padding: .2rem 0 .4rem;
+      .l {
+        flex: 1;
+      }
+      .r {
+        width: .84rem;
+        margin-left: .2rem;
+      }
+      .am-list-item {
+        padding-left: 0;
+        height: .7rem !important;
+        min-height: .7rem !important;
+      }
+      .am-list-line {
+        box-sizing: border-box;
+        height: 100%;
+        border: 1px solid #999;
+        border-radius: 2px;
+      }
+    }
+    .search-data {
+      padding-bottom: .7rem;
+      li {
+        padding: .4rem 0;
+        line-height: 1;
+        border-bottom: 1px solid #999;
+        h3 {
+          padding-bottom: .2rem;
+          font-size: .26rem;
+          color: #000;
+          font-weight: 700;
+          overflow: hidden;
+          text-overflow:ellipsis;
+          white-space: nowrap;
+        }
+
+        p {
+          position: relative;
+          color: #333;
+          font-size: .24rem;
+          line-height: 1.4;
+          padding-bottom: .1rem;
+        }
+
+        div {
+          color: #b9b9b9;
+          overflow: hidden;
+          text-overflow:ellipsis;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+
+  .nav-list,
+  .search {
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 998;
+    width: 100%;
+    max-height: 100vh;
+    overflow: auto;
+    transition: height .3s;
+    background-color: #fff;
+    // touch-action: none;
+  }
+  .search-label {
+    min-height: 1rem;
+  }
+  .am-accordion {
+    padding-bottom: 1rem;
+    background-color: #fff;
+  }
+
+  .am-accordion-content-active {
+    .am-accordion-content-box {
+      &::after {
+        box-sizing: border-box;
+        padding: 0 0.4rem;
+        background-clip: content-box;
+      }
+    }
+  }
+
+  .am-accordion-item-active {
+    .am-accordion-header {
+      &::after {
+        display: none !important;
+      }
+    }
+
+    .am-accordion-content-box {
+      .am-list-body {
+        &::after {
+          display: none !important;
+        }
+      }
+    }
+  }
+
+  .my-pad {
+    .arrow {
+      display: none !important;
+    }
+
+    .am-accordion-header {
+      &::after {
+        display: block !important;
+      }
+    }
+  }
+
+  .am-accordion-header {
+    height: auto !important;
+    line-height: 1 !important;
+    padding: 0.4rem 0.4rem !important;
+    font-size: 0.26rem !important;
+    color: #000 !important;
+
+    &::after {
+      box-sizing: border-box;
+      padding: 0 0.4rem;
+      background-clip: content-box;
+    }
+
+    .arrow {
+      top: auto !important;
+      right: 0.7rem !important;
+      width: 17px !important;
+      height: 11px !important;
+    }
+  }
+
+  .am-list-line {
+    .am-list-content {
+      color: #333 !important;
+      font-size: 0.24rem !important;
+    }
+
+    &::after {
+      display: none !important;
+    }
+  }
+
+  .am-list-item {
+    padding-left: 0.4rem;
+
+    .am-list-content {
+      padding-left: 0.3rem;
+    }
+  }
+}

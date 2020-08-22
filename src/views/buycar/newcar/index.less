@@ -1,0 +1,351 @@
+.newcar {
+  color: #000000;
+
+  .red {
+    color: #ff0000;
+  }
+
+  .title-img span.ss {
+    color: #000000 !important;
+    left: .9rem;
+
+    &::before {
+      background-color: #000000 !important;
+    }
+  }
+
+  .tag-img {
+    position: absolute;
+    top: 50%;
+    width: 1rem;
+    left: .9rem;
+    margin-top: -0.12rem;
+  }
+
+  .insurance {
+    font-size: .24rem;
+
+    .desc {
+      margin: .8rem .3rem;
+      line-height: 1.6;
+
+      &.small {
+        margin: .5rem .3rem;
+      }
+    }
+
+    .center {
+      margin: .8rem .3rem;
+      background: #f3f3f3;
+
+      .a1 {
+        margin: .99rem .3rem 1.35rem;
+
+        .title {
+          font-size: .3rem;
+          margin-bottom: .2rem;
+        }
+
+        p {
+          line-height: 1.6;
+        }
+
+        &:last-child {
+          padding-bottom: 1.35rem;
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .huikui {
+      padding: .8rem .3rem;
+      background: #f3f3f3;
+      margin-bottom: .59rem;
+
+      .title {
+        font-size: .4rem;
+        text-align: center;
+        line-height: 1.5;
+      }
+
+      .content {
+        line-height: 1.6;
+      }
+
+      .line {
+        margin: .5rem 0;
+        background: rgba(27, 27, 27, 0.18);
+        height: 1px;
+      }
+    }
+
+    .imgs {
+      margin: 0 .3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 1rem;
+
+      .plus {
+        width: .8rem;
+        height: .8rem;
+        margin: .5rem auto;
+      }
+
+      .big {
+        width: 100%;
+        box-shadow: 0 0 10px #eee;
+      }
+    }
+  }
+
+  .computed {
+    padding: 0 .3rem;
+
+    .label-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: .4rem;
+
+      .l {
+        // width: 3rem;
+        width: 2rem;
+        height: .7rem;
+        line-height: .7rem;
+        font-size: .26rem;
+        font-weight: 700;
+        position: relative;
+        padding-left: .2rem;
+        text-align: justify;
+
+        &::after {
+          content: "";
+          display: inline-block;
+          width: 100%;
+        }
+      }
+
+      .label-must {
+
+        // padding-left: .2rem;
+        &::before {
+          content: "*";
+          color: #d3b07a;
+          position: absolute;
+          left: 0;
+          height: 100%;
+        }
+      }
+
+      .r {
+        display: flex;
+
+        .small-input {
+          flex: 1;
+          margin-right: .2rem;
+        }
+
+        &>div:last-child {
+          flex: 3;
+        }
+
+        flex: 1;
+
+        .price {
+          color: #d3b07a;
+          font-size: .3rem;
+        }
+      }
+    }
+
+    .title {
+      color: #000000;
+      font-size: .3rem;
+      font-weight: 700;
+      margin: .8rem 0 .28rem;
+      padding-bottom: .28rem;
+      border-bottom: .05rem solid red;
+
+      span {
+        &:first-child {
+          font-size: .4rem;
+          margin-right: .19rem;
+        }
+      }
+    }
+
+    .step_two {
+      .card {
+        width: 6.9rem;
+        border-top: 2px solid #d3b07a;
+        border-left: 1px solid rgba(0, 0, 0, 0.1);
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        margin: .3rem auto;
+        padding: 0 .3rem .5rem;
+        box-sizing: border-box;
+
+        .head {
+          color: #000000;
+          font-size: .3rem;
+          font-weight: 700;
+          margin: .4rem 0;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .left {
+            display: flex;
+          }
+
+          .info {
+            width: .36rem;
+            height: .36rem;
+            background: url(../../../imgs/newcar/icon-info.png) no-repeat;
+            background-size: contain;
+            display: inline-block;
+            margin-left: .1rem;
+          }
+        }
+
+        &.single {
+          padding-bottom: 0;
+        }
+
+        .ver_line {
+          height: 1px;
+          width: 100%;
+          margin: .4rem 0;
+          background: rgba(0, 0, 0, 0.1);
+        }
+
+        &.base {
+          padding: .5rem .3rem;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          color: #000000;
+
+          .column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            span {
+              margin-top: .19rem;
+            }
+
+            a {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              color: #000000;
+            }
+          }
+
+          .line {
+            width: 1px;
+            height: .8rem;
+            background: rgba(0, 0, 0, 0.1);
+          }
+        }
+
+      }
+
+      .btn {
+        height: 1rem;
+        line-height: 1rem;
+        color: #fff;
+        font-size: .4rem;
+        text-align: center;
+        background: #d3b07a;
+        margin-bottom: .6rem;
+        margin-top: .6rem;
+
+        &.black {
+          background: rgba(0, 0, 0, 0.7);
+          margin-top: .4rem;
+        }
+      }
+
+      .content {
+        &.large {
+          .my-radio {
+            flex-wrap: wrap;
+            height: 1rem;
+
+            .item {
+              width: 30% !important;
+            }
+          }
+        }
+      }
+    }
+
+    .description {
+      font-size: .24rem;
+      text-align: right;
+      color: #000000;
+      margin: .6rem 0 1rem;
+
+      .price {
+        color: #d3b07a;
+        font-size: .28rem;
+        margin-bottom: .29rem;
+
+        span {
+          font-size: .4rem;
+        }
+      }
+    }
+  }
+}
+
+.am-modal-mask+.am-modal-wrap.modal-newcar {
+  touch-action: none;
+
+  .am-modal-transparent {
+    width: 6.9rem;
+
+    .am-modal-content {
+      .am-modal-body {
+        .calc-container {
+          text-align: center;
+          padding-top: .65rem;
+          padding-bottom: .8rem;
+
+          img {
+            height: 1.1rem;
+            width: 1.1rem;
+            margin-bottom: .4rem;
+          }
+
+          .text {
+            font-size: .32rem;
+            color: #000000;
+            line-height: .5rem;
+            margin: auto;
+            max-width: 80%;
+            white-space: normal;
+          }
+
+          .btn {
+            height: .7rem;
+            line-height: .7rem;
+            width: 2.7rem;
+            border-radius: .35rem;
+            font-size: .3rem;
+            color: #fff;
+            background-color: #d3b078;
+            font-weight: bold;
+            margin: auto;
+            margin-top: .5rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+.user_home {
+  .no_bind{
+    >img.nofound{
+      width: 100%;
+    }
+  }
+  .name {
+    p {
+      &.sex {
+        font-size: .28rem;
+        color: #000000;
+        font-weight: normal !important;
+        margin: .2rem 0 .1rem;
+      }
+    }
+    a {
+      display: flex !important;
+      align-items: center;
+    }
+  }
+  .card {
+    &.base {
+      a {
+        img {
+          width: .56rem;
+        }
+      }
+      &.yy {
+        img {
+          width: .44rem;
+        }
+      }
+      &.order {
+        img {
+          width: .49rem;
+          &:last-child {
+            width: .4rem;
+          }
+        }
+      }
+    }
+    & +.card{
+      margin-top: .3rem;
+    }
+    .mybtn{
+      height: .75rem;
+      width: 2.7rem;
+      color: #ffffff;
+      font-size: .3rem;
+      font-weight: bold;
+      border-radius: .375rem;
+      margin: auto;
+      line-height: .75rem;
+      background-color: #d3b07a;
+      text-align: center;
+      margin-top: .4rem;
+    }
+    .inner{
+      .title{
+        font-size: .28rem;
+        color: #000000;
+        font-weight: bold;
+        padding-bottom: .4rem;
+        border-bottom: 1px solid rgba(0,0,0,.1);
+        & +.info{
+          margin-top: .4rem;
+        }
+      }
+      .info{
+        >ul>li{
+          color: #333333;
+          font-size: .24rem;
+          padding: .15rem 0;
+        }
+      }
+    }
+  }
+}

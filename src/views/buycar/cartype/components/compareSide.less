@@ -1,0 +1,209 @@
+.fix-btn-type{
+    position: fixed;
+    right: 0;
+    bottom: 1.8rem;
+    z-index: 12;
+    height: 1rem;
+    width: 2rem;
+    background-color: rgba(102,102,102,.8);
+    color: #ffffff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: .1rem 0 0 .1rem;
+    overflow: hidden;
+    .arrow{
+        height: 100%;
+        width: .3rem;
+        border: .02rem solid rgba(102,102,102,.5);
+        display: flex;
+        align-items: center;
+    }
+    .circle{
+        height: .45rem;
+        width: .45rem;
+        line-height: .48rem;
+        text-align: center;
+        border-radius: 50%;
+        background-color: #ffffff;
+        color: rgba(102,102,102,.8);
+        margin: 0 .1rem;
+    }
+    .text{
+        font-size: .22rem;
+        >div{
+            & +div{
+                margin-top: .05rem;
+            }
+        }
+    }
+    &.hide{
+        display: none;
+    }
+}
+.am-modal-mask +.am-modal-wrap.modal-tr{
+    justify-content: flex-end;
+    align-items: flex-start;
+    touch-action: none;
+    box-sizing: border-box;
+    height: 100%;
+    .am-modal-transparent{
+        width: 4.8rem;
+        height: 100%;
+        .am-modal-content{
+            background-color: #d3b078;
+            border-radius: 0;
+            padding-top: .1rem;
+            width: 4.8rem;
+            height: 100%;
+            overflow: inherit;
+            box-sizing: border-box;
+            .am-modal-body{
+                padding: 0;
+                .compare-container{
+                    background-color: #ffffff;
+                    height: 100%;
+                    overflow: auto;
+                    .compare-title{
+                        padding-top: .95rem;
+                        padding-bottom: .5rem;
+                        font-size: .4rem;
+                        color: #000000;
+                        border-bottom: 1px solid rgba(0,0,0,.2);
+                        text-align: center;
+                        &.flex{
+                            display: flex;
+                            align-items: center;
+                            padding-left: .2rem;
+                            padding-right: .2rem;
+                            box-sizing: border-box;
+                            img{
+                                height: .4rem;
+                                margin-top: .2rem;
+                            }
+                            .grow{
+                                flex-grow: 1;
+                            }
+                        }
+                    }
+                    .compare-item{
+                        padding: 0 .3rem;
+                        color: #000000;
+                        .inner{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            padding: .25rem 0;
+                            border-bottom: 1px solid rgba(0,0,0,.2);
+                            text-align: left;
+                            >div:first-child{
+                                flex-grow: 1;
+                            }
+                            .name{
+                                font-size: .26rem;
+                                font-weight: bold;
+                            }
+                            .type{
+                                font-size: .3rem;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                max-width: 3.5rem;
+                            }
+                        }
+                        .inner-version{
+                            padding: .25rem 0;
+                            border-bottom: 1px solid rgba(0,0,0,.2);
+                            text-align: left;
+                            .carName{
+                                font-size: .3rem;
+                                font-weight: bold;
+                                max-width: 4.2rem;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                &.disable{
+                                    color: #b5b5b5;
+                                }
+                            }
+                            .price{
+                                font-size: .3rem;
+                                font-weight: bold;
+                                color: #d3b078;
+                            }
+                        }
+                        .inner-text{
+                            text-align: center;
+                            font-weight: bold;
+                            padding: .15rem 0;
+                            border-bottom: 1px solid rgba(0,0,0,.2);
+                            font-size: .26rem;
+                            &.content{
+                                padding: .3rem 0;
+                                font-size: .3rem;
+                                font-weight: normal;
+                                text-align: left;
+                            }
+                        }
+                        .inner-add{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            padding: .45rem 0;
+                            border-bottom: 1px solid rgba(0,0,0,.2);
+                            text-align: left;
+                            font-size: .3rem;
+                            color: #000000;
+                            >div>img{
+                                height: .4rem;
+                                width: .4rem;
+                            }
+                        }
+                        .inner-last{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            padding-top: .4rem;
+                            padding-bottom: .6rem;
+                            font-size: .24rem;
+                            .l{
+                                color: #a0a0a0;
+                            }
+                            .r{
+                                color: #d3b078;
+                                img{
+                                    width: .24rem;
+                                    margin-right: .1rem;
+                                    vertical-align: middle;
+                                }
+                            }
+                        }
+                    }
+                    .compare-btn{
+                        width: 4.2rem;
+                        height: .75rem;
+                        line-height: .75rem;
+                        border-radius: .375rem;
+                        background-color: #d3b078;
+                        color: #ffffff;
+                        text-align: center;
+                        margin: auto;
+                    }
+                    .arrow{
+                        border-radius: .1rem 0 0 .1rem;
+                        height: 1rem;
+                        width: .3rem;
+                        text-align: center;
+                        background-color: #d3b078;
+                        position: fixed;
+                        right: 4.8rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        top: 80%;
+                    }
+                }
+            }
+        }
+    }
+}

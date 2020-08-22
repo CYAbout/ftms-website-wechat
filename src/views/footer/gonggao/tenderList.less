@@ -1,0 +1,77 @@
+.tender-list{
+    .hidden{
+        display: none;
+    }
+    .banner-img-outer{
+        width: 100%;
+        text-align: center;
+        >img{
+            width: 7.5rem;
+            height: 2.8rem;
+        }
+        .tender{
+            color: #ffffff;
+            font-size: .4rem;
+            font-weight: bold;
+            position: absolute;
+            margin-top: 1.1rem;
+            left: 1rem;
+            &::before{
+                position: absolute;
+                content: '';
+                bottom: -0.2rem;
+                height: .02rem;
+                width: .34rem;
+                background-color: #ffffff;
+            }
+        }
+    }
+    .tender-main{
+        width: 6.9rem;
+        margin: auto;
+        margin-bottom: .5rem;
+        >ul{
+            margin-top:.8rem;
+            width: 100%;
+            >li{
+                border-bottom: 1px solid #eeeeee;
+                padding: .3rem;
+                &:first-child{
+                    border-top: 1px solid #eeeeee;
+                }
+                .time{
+                    font-size: .22rem;
+                    color: #999999;
+                    >img{
+                        width: .2rem;
+                        height: .2rem;
+                        margin-right: 0.08rem;
+                    }
+                    & +p{
+                        font-size: .24rem;
+                        color: #000000;
+                        line-height: .36rem;
+                        margin-top: .3rem;
+                    }
+                }
+            }
+        }
+    }
+    .scan-more{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1rem;
+        .name{
+            font-size: .24rem;
+            color: #1a1a1a;
+        }
+        .icon{
+            margin-top: .2rem;
+            >img{
+                width: .34rem;
+                height: .18rem;
+            }
+        }
+    }
+}

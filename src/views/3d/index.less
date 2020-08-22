@@ -1,0 +1,25 @@
+.dm_container {
+  height: calc(100vh - .9rem);
+  // margin-top: -.9rem;
+  &.not_wechat {
+    height: calc(100vh - 2.5rem);
+  }
+}
+@media all and (orientation: landscape) {
+  .dm_container {
+    height: 100vh;
+    &.not_wechat {
+      height: 100vh;
+    }
+  }
+  .app {
+    max-width: none;
+    margin: 0;
+    .main {
+      padding: 0;
+    }
+  }
+  .header, .fiexd-btn, .footer {
+    display: none !important;
+  }
+}

@@ -1,0 +1,423 @@
+.rent .tag-img {
+  position: absolute;
+  top: 50%;
+  width: 1.5rem;
+  left: 1rem;
+  margin-top: -0.14rem;
+}
+.rent .jieshao-zulin h3 {
+  font-size: .4rem;
+  text-align: center;
+}
+.rent .jieshao-zulin h3.b {
+  border-bottom: 1px solid #eee;
+  padding-bottom: .5rem;
+}
+.rent .jieshao-zulin p.t {
+  font-size: .24rem;
+  line-height: 1.6;
+  color: #1b1b1b;
+}
+.rent .jieshao-zulin .swiper-box {
+  width: 100%;
+  height: 4rem;
+}
+.rent .jieshao-zulin .swiper-box .swiper-container {
+  height: 100%;
+}
+.rent .jieshao-zulin .swiper-box .swiper-container .swiper-button-prev,
+.rent .jieshao-zulin .swiper-box .swiper-container .swiper-button-next {
+  width: .56rem;
+  height: .56rem;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  bottom: 0;
+  top: auto;
+}
+.rent .jieshao-zulin .swiper-box .swiper-container .swiper-button-prev {
+  background-image: url('../../../imgs/carowner-lbtn.png');
+  left: 40%;
+}
+.rent .jieshao-zulin .swiper-box .swiper-container .swiper-button-next {
+  background-image: url('../../../imgs/carowner-rbtn.png');
+  right: 40%;
+}
+.rent .jieshao-zulin .swiper-box .v-item {
+  width: 50%;
+}
+.rent .jieshao-zulin .swiper-box .v-item img {
+  width: 100%;
+}
+.rent .jieshao-zulin .swiper-box .name {
+  font-size: .3rem;
+  font-weight: bold;
+  color: #000000;
+  padding: .2rem 0;
+  text-align: center;
+  border-bottom: 0.01rem solid rgba(61, 58, 58, 0.5);
+}
+.rent .jieshao-zulin .swiper-box .info {
+  font-size: .26rem;
+  font-weight: bold;
+  color: #d3b078;
+  padding: .25rem 0;
+  text-align: center;
+  border-bottom: 0.01rem solid rgba(61, 58, 58, 0.5);
+}
+.rent .jieshao-zulin .step {
+  padding: 0 1rem;
+}
+.rent .jieshao-zulin .step li {
+  position: relative;
+  display: flex;
+  height: .8rem;
+  align-items: center;
+  font-size: .3rem;
+  color: #000;
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+.rent .jieshao-zulin .step li img {
+  box-sizing: content-box;
+  width: .8rem;
+  height: .8rem;
+  margin-right: .6rem;
+  padding-left: .8rem;
+}
+.rent .jieshao-zulin .step li::before {
+  content: '';
+  position: absolute;
+  top: .4rem;
+  left: 0;
+  width: 1px;
+  height: 1.3rem;
+  background-color: #000;
+}
+.rent .jieshao-zulin .step li::after {
+  content: '';
+  position: absolute;
+  top: .4rem;
+  left: -4.5px;
+  width: 0;
+  height: 0;
+  border-top: 5px solid #000;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+.rent .jieshao-zulin .step li:last-child::before {
+  height: 0px;
+}
+.rent .jieshao-zulin .step li:first-child::after {
+  top: calc(-5.6rem);
+}
+.rent .jieshao-zulin .step li:first-child::after,
+.rent .jieshao-zulin .step li:last-child::after {
+  left: -3px;
+  height: 0px;
+  width: 5px;
+  height: 5px;
+  border-radius: 2.5px;
+  border: 0 none;
+  border: 1px solid #000;
+}
+.rent .jieshao-zulin .bg-text {
+  display: flex;
+  flex-wrap: wrap;
+  height: 4rem;
+  background-image: url('../../../imgs/zulin-pic-1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  font-size: .24rem;
+}
+.rent .jieshao-zulin .bg-text::before {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  top: 0;
+  left: 50%;
+}
+.rent .jieshao-zulin .bg-text::after {
+  position: absolute;
+  content: '';
+  height: 1px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  top: 50%;
+  left: 0;
+}
+.rent .jieshao-zulin .bg-text > span {
+  color: #fff;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rent .jieshao-zulin .bg-text .t {
+  padding-bottom: .1rem;
+}
+.rent .jieshao-zulin .bg-text .t .b {
+  font-size: .44rem;
+}
+.rent h3.bl {
+  padding-left: .2rem;
+  border-left: 3px solid #d3b078;
+  margin-bottom: .3rem;
+  margin-top: .5rem;
+  text-align: left;
+  font-size: .3rem;
+}
+.rent .gray {
+  display: flex;
+  flex-wrap: wrap;
+}
+.rent .gray > span {
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  padding: 0 .2rem;
+  font-size: .24rem;
+  margin-left: .3rem;
+  margin-bottom: .2rem;
+  height: .6rem;
+  line-height: .6rem;
+  word-break: keep-all;
+}
+.rent .gray > span .brown {
+  color: #d3b078;
+}
+.rent .wuyou {
+  padding-bottom: .5rem;
+}
+.rent .wuyou .img {
+  margin: 0 .3rem;
+  margin-top: 1rem;
+  font-size: 0;
+  position: relative;
+}
+.rent .wuyou .img img {
+  width: 100%;
+}
+.rent .wuyou .img > span {
+  font-size: .26rem;
+  position: absolute;
+  color: #d3b078;
+  font-weight: 700;
+  top: -0.5rem;
+}
+.rent .wuyou .img .b {
+  top: .8rem;
+}
+.rent .wuyou .img .l {
+  left: 0;
+}
+.rent .wuyou .img .r {
+  right: 0;
+}
+.rent .wuyou-t ul {
+  margin: 0 .3rem;
+  margin-bottom: .3rem;
+}
+.rent .wuyou-t li {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 1rem;
+  font-size: .24rem;
+}
+.rent .wuyou-t li span {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #fff;
+}
+.rent .wuyou-t li:nth-child(even) {
+  background-color: #f6f6f6;
+}
+.rent .wuyou-t li:first-child {
+  height: 1.16rem;
+  background-color: #d3b078;
+  color: #fff;
+  font-weight: 700;
+}
+.rent .tishi {
+  display: flex;
+  font-size: .24rem;
+  color: #b5b5b5;
+}
+.rent .tishi span {
+  color: #d3b078;
+}
+.rent .hezuo {
+  margin-bottom: 1rem;
+}
+.rent .hezuo .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px #eee;
+  height: 3.6rem;
+  margin-bottom: .3rem;
+}
+.rent .hezuo .img img {
+  max-width: 60%;
+  max-height: 40%;
+}
+.rent .info-box {
+  margin-left: .3rem;
+  margin-right: .3rem;
+}
+.rent .info-box .title {
+  font-size: .3rem;
+  font-weight: 700;
+  color: #000;
+  margin-top: .8rem;
+  margin-bottom: .3rem;
+}
+.rent .info-box .title span {
+  font-size: .46rem;
+}
+.rent .info-box .info {
+  padding: .4rem .2rem;
+  border: 1px solid #ccc;
+  border-top: 3px solid #d3b078;
+}
+.rent .info-box .info .r p {
+  width: 100%;
+  text-align: right;
+  color: #b9b9b9;
+  font-size: .26rem;
+}
+.rent .info-box .info .r p span {
+  color: #d3b078;
+  font-weight: 700;
+}
+.rent .info-box .info .b {
+  border-bottom: 1px solid #ccc;
+}
+.rent .info-box .info li.bili {
+  min-height: .4rem;
+  margin-bottom: .4rem;
+  padding: 0 .15rem;
+}
+.rent .info-box .info .manageFee {
+  text-align: right;
+  color: #000;
+  font-size: .24rem;
+  padding-right: .4rem;
+}
+.rent .info-box .info .manageFee + .label-box-nobg {
+  margin-top: 0;
+}
+.rent .label-box,
+.rent .label-box-nobg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: .4rem;
+}
+.rent .label-box .l,
+.rent .label-box-nobg .l {
+  color: #000;
+  width: 2.2rem;
+  text-align: left;
+  height: .7rem;
+  line-height: .7rem;
+  font-size: .26rem;
+  font-weight: 700;
+  position: relative;
+}
+.rent .label-box .l.justify,
+.rent .label-box-nobg .l.justify {
+  text-align: justify;
+}
+.rent .label-box .l::after,
+.rent .label-box-nobg .l::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+.rent .label-box .r,
+.rent .label-box-nobg .r {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+.rent .label-box .r .small-input,
+.rent .label-box-nobg .r .small-input {
+  flex: 1;
+  margin-right: .2rem;
+}
+.rent .label-box .r > div:last-child,
+.rent .label-box-nobg .r > div:last-child {
+  flex: 3;
+}
+.rent .label-box .r .my-picker,
+.rent .label-box-nobg .r .my-picker {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.rent .label-box .res-r,
+.rent .label-box-nobg .res-r {
+  justify-content: flex-end;
+  font-size: .26rem;
+  text-align: right;
+  font-weight: 700;
+}
+.rent .label-box .res-g,
+.rent .label-box-nobg .res-g {
+  justify-content: flex-end;
+  font-size: .26rem;
+  text-align: right;
+  font-weight: 700;
+}
+.rent .label-box .label-must,
+.rent .label-box-nobg .label-must {
+  padding-left: .2rem;
+}
+.rent .label-box .label-must::before,
+.rent .label-box-nobg .label-must::before {
+  content: "*";
+  color: #d3b07a;
+  position: absolute;
+  left: 0;
+  height: 100%;
+}
+.rent .label-box-nobg {
+  margin-top: .4rem;
+  border-bottom: 1px solid #eee;
+}
+.rent .label-box-nobg .l {
+  text-align: left;
+  width: auto;
+}
+.rent .tishi-b {
+  padding-top: .3rem;
+  padding-bottom: 1rem;
+  font-size: .24rem;
+  color: #b5b5b5;
+  line-height: 1.4;
+}
+.rent .input-tishi {
+  display: flex;
+  justify-content: space-between;
+  font-size: .24rem;
+}
+.rent .no-mt {
+  margin-top: 0;
+}
+.rent .mt-05 {
+  margin-top: .05rem;
+}
+.rent .pt-5 {
+  padding-top: .5rem;
+}
+.rent .pt-2 {
+  padding-top: .2rem;
+}

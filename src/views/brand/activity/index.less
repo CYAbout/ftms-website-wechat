@@ -1,0 +1,149 @@
+.activity {
+  h3.title {
+    font-size: .4rem;
+    text-align: center;
+    color: #000;
+    font-weight: 700;
+    border-bottom: 1px solid #d6d6d6;
+    margin:  .8rem .3rem .6rem;
+    padding-bottom: .5rem;
+    p {
+      color: #999;
+      font-size: .24rem;
+      line-height: 1.6;
+    }
+  }
+  .wenzhang {
+    padding: 0 .3rem;
+    margin-bottom: .8rem;
+    .img-box {
+      height: 4rem;
+      overflow: hidden;
+      img {
+        width: 100%;
+        max-height: 100%;
+      }
+    }
+    .time {
+      color: #999;
+      font-size: .24rem;
+      padding-top: .2rem;
+      &::before {
+        display: inline-block;
+        margin-right: .1rem;
+        content: '';
+        width: .2rem;
+        height: .2rem;
+        background-image: url('../../../imgs/wenzhang-0.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        // background-color: #eee;
+        border-radius: .1rem;
+      }
+    }
+    h4 {
+      padding-top: .2rem;
+      font-size: .3rem;
+      line-height: 1.4;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      &::after {
+        display: inline-block;
+        margin-left: .1rem;
+        content: '';
+        width: .3rem;
+        height: .3rem;
+        background-image: url('../../../imgs/cu-icon.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
+    }
+    h4.no-cu-icon {
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  .wangqi {
+    li.wenzhang {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .img-box {
+        width: 3.8rem;
+        height: 2.25rem;
+      }
+      .text {
+        flex: 1;
+        margin-left: .2rem;
+      }
+      h4 {
+        white-space: normal;
+        font-weight: 400;
+        &::after{
+          display: none;
+        }
+      }
+    }
+  }
+  .lookmore {
+    min-height: .8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: .9rem 0 1rem;
+    color: #999;
+    font-weight: 700;
+    text-align: center;
+    div {
+      padding: 0 .4rem;
+    }
+  }
+}
+.activity-detail {
+  padding: .8rem .3rem 1rem;
+  h3 {
+    border: 0 none;
+    padding-bottom: .2rem;
+  }
+  .time {
+    padding: .2rem 0 .4rem;
+    margin-bottom: .8rem;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  img {
+    width: 100%;
+    max-width: 100%;
+  }
+  p {
+    line-height: 1.4;
+    font-size: .24rem;
+  }
+  .com-fans-time {
+    color: #999;
+    font-size: .24rem;
+    display: flex;
+    align-items: center;
+    &::before {
+      display: inline-block;
+      margin-right: .1rem;
+      content: '';
+      width: .2rem;
+      height: .2rem;
+      background-image: url('../../../imgs/wenzhang-0.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      // background-color: #eee;
+      border-radius: .1rem;
+    }
+  }
+}

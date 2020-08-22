@@ -1,0 +1,192 @@
+.mine_order {
+  .search_area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: .25rem;
+    // margin: 0 .3rem .5rem;
+    .my-btn {
+      margin-bottom: .25rem;
+      .am-button {
+        width: 3.35rem !important;
+        margin: 0 0 .13rem 0;
+        font-size: .26rem;
+        color: #000000;
+        background: #ffffff;
+        border: 1px solid #000000;
+      }
+      &.active {
+        .am-button {
+          color: #ffffff;
+          background: #d3b07a;
+          border: none;
+        }
+      }
+    }
+  }
+  .car_info {
+    margin-top: .5rem;
+    .img-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.1rem;
+      margin-right: .4rem;
+      img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+      }
+    }
+    .info {
+      .detail {
+        .money {
+          color: #000000;
+          font-weight: bold;
+          span {
+            color: #d3b07a;
+            &:first-child {
+              font-size: .24rem;
+            }
+            &:last-child {
+              font-size: .32rem;
+            }
+          }
+        }
+      }
+      .title {
+        color: #000000;
+      }
+    }
+    img {
+      // height: 1.5rem !important;
+    }
+  }
+  .btns {
+    .my-btn {
+      .am-button-inline {
+        margin: 0 .2rem !important;
+      }
+    }
+  }
+  &.detail {
+    .order_info {
+      margin-top: .6rem;
+      .no {
+        display: flex;
+        justify-content: space-between;
+        .status {
+          color: #d3b07a;
+        }
+      }
+      .text {
+        margin-bottom: .39rem;
+      }
+    }
+    .warning {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: .4rem;
+      color: #d12c2c;
+      font-size: .28rem;
+      .interval {
+        font-size: .32rem;
+      }
+    }
+    .main_title {
+      font-size: .3rem;
+      font-weight: 700;
+      margin: .59rem 0 .4rem;
+    }
+    .product_img {
+      margin-bottom: .2rem;
+      img {
+        width: 100%;
+        height: 3rem;
+      }
+    }
+    .goods_info {
+      .head {
+        .version {
+          font-weight: 700;
+        }
+      }
+      .text {
+        display: flex;
+        justify-content: space-between;
+        color: #666666;
+        font-size: .24rem;
+        margin-top: .29rem;
+        &.special {
+          font-weight: 700;
+          .price {
+            color: #d3b07a;
+            span {
+              &:last-child {
+                font-size: .32rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    .my_step {
+      padding: .6rem 0;
+      .step_item {
+        display: flex;
+        justify-content: flex-start;
+        font-size: .24rem;
+        color: #999999;
+        position: relative;
+        .step_title {
+          min-width: 1.4rem;
+        }
+        .step_icon {
+          margin: 0 .25rem;
+          img {
+            width: .25rem;
+            height: .25rem;
+          }
+        }
+        .step_content {
+          min-height: 1rem;
+        }
+        .step_tail {
+          height: 100%;
+          position: absolute;
+          left: 1.76rem;
+          top: 0;
+          padding: .24rem 0;
+          
+        }
+        &:not(:last-child) {
+          .step_tail {
+            &::after {
+              height: 100%;
+              width: 1px;
+              background: rgba(0,0,0,0.2);
+              content: "";
+              display: inline-block;
+            }
+          }
+        }
+        &.current {
+          color: #333333;
+        }
+      }
+    }   
+    .btns {
+      display: flex;
+      justify-content: space-around;
+      padding: 0 .5rem;
+      margin-top: .8rem;
+      .my-btn {
+        .am-button-inline {
+          min-width: 2.7rem;
+          margin: 0;
+        }
+      }
+    } 
+  }
+}

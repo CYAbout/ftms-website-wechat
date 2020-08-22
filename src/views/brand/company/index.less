@@ -1,0 +1,157 @@
+.company {
+  .title-img {
+    span {
+      color: #fff !important;
+    }
+  }
+  h3.title {
+    font-size: .4rem;
+    text-align: center;
+    color: #000;
+    font-weight: 700;
+    border-bottom: 1px solid #eee;
+    margin:  .8rem .3rem .6rem;
+    padding-bottom: .5rem;
+  }
+  .img-box {
+    text-align: center;
+    font-size: 0rem;
+    img {
+      width: 100%;
+    }
+  }
+  .video-box {
+    position: relative;
+    // width: 100%;
+    margin: 0 .3rem 1rem;
+    .play-btn {
+      position: absolute;
+      width: 1.36rem;
+      height: 1.36rem;
+      background-image: url('../../../imgs/play.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+  }
+  .tables {
+    margin: 0 .3rem;
+  }
+  .sanjiao {
+    width:0;
+    height:0;
+    border-width:0 3.45rem 2rem;
+    border-style:solid;
+    border-color:transparent transparent #eee;
+    position:relative;
+    margin-bottom: .2rem;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 2rem;
+      height: .6rem;
+      // background-color: #000;
+      background-image: url('../../../imgs/qiyepinpai-logo1.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,160%);
+    }
+  }
+  .tables {
+    font-size: .24rem;
+    .title {
+      background-color: #d3b078 !important;
+      font-size: .24rem;
+      color: #fff;
+      font-weight: 700;
+      border-top: 1px solid #fff;
+    }
+    .title:not(last-child) {
+    }
+    
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: .2rem;
+      height: 1rem;
+      line-height: 1.2;
+    }
+    li:nth-child(odd) {
+      background-color: #eee;
+      border-top: 1px solid #eee;
+    }
+    li:nth-child(even) {
+      background-color: #fafafa;
+      border-top: 1px solid #fafafa;
+    }
+    li.h-li {
+      height: 1.5rem;
+    }
+  }
+  .table-1 {
+    margin-bottom: .4rem;
+    display: flex;
+    &>ul:first-child {
+      flex: 1;
+    }
+    &>ul:last-child {
+      flex: 3;
+    }
+  }
+  .table-2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .4rem;
+    li {
+      padding: 0;
+      flex: 1;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      width: 31%;
+      height: 10rem;
+    }
+    ul:nth-child(3){
+      li:first-child {
+        max-height: 1rem;
+      }
+    }
+    
+  }
+  .table-3 {
+    .title-b {
+      color: #fff;
+      font-weight: 700;
+      background-color: #d3b078;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: .2rem;
+      height: 1rem;
+      line-height: 1.2;
+      margin-bottom: .4rem;
+    }
+    .titlt-t-2 {
+      margin-top: .2rem;
+    }
+    .h-li-2 {
+      height: 2rem;
+    }
+    .table-box {
+      display: flex;
+      justify-content: space-between;
+      ul {
+        width: 47%;
+      }
+    }
+  }
+  .zhizhen {
+    // margin: 0 .3rem;
+  }
+}

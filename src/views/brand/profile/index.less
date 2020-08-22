@@ -1,0 +1,314 @@
+.profile {
+  .swiper-pagination {
+    display: inline-block;
+    // right: 0 !important;
+    // top: 50% !important;
+    // transform: rotateZ(90deg);
+    // width: auto !important;
+    // left: auto;
+    // bottom: auto;
+    .swiper-pagination-bullet {
+      margin: .08rem;
+    }
+  }
+  .swiper-pagination-bullet {
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    margin: 8px 0;
+    background-color: transparent;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #fff;
+  }
+  .join-us {
+    position: fixed;
+    right: 0;
+    top: 5rem;
+    z-index: 10;
+    width: 1.3rem;
+    height: 1.3rem;
+    background-color: #d3b078;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .txt {
+      color: #fff;
+      font-size: .24rem;
+      padding-top: .1rem;
+    }
+    .img {
+      width: .4rem;
+      height: .4rem;
+      overflow: hidden;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  h3.title {
+    font-size: .4rem;
+    text-align: center;
+    color: #000;
+    font-weight: 700;
+    border-bottom: 1px solid #d6d6d6;
+    margin:  .8rem .3rem .6rem;
+    padding-bottom: .5rem;
+    p {
+      color: #999;
+      font-size: .24rem;
+      line-height: 1.6;
+    }
+  }
+  .img-box {
+    text-align: center;
+    margin: 0 .3rem;
+    font-size: 0rem;
+    img {
+      width: 100%;
+    }
+  }
+  .car-canshu {
+    padding: .6rem .3rem .5rem;
+    li {
+      word-break: break-all;
+      padding-bottom: .2rem;
+      display: flex;
+      font-size: .24rem;
+      color: #000;
+      line-height: 1.4;
+      &>span:first-child {
+        color: #999;
+        margin-right: .74rem;
+        min-width: 1.2rem;
+        text-align: left;
+        &::after {
+          content: "";
+          display: inline-block;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .table-1 {
+    margin: 0 .3rem 1rem;
+    li {
+      color: #000;
+      font-size: .24rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: .8rem;
+      span {
+        background-color: #fafafa;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 2;
+        text-align: center;
+        line-height: 1.2;
+      }
+      span:nth-child(3),
+      span:nth-child(2) {
+        border-left: 1px solid #fff;
+        flex: 1;
+      }
+    }
+    li:nth-child(even) {
+      span {
+        background-color: #eee;
+      }
+    }
+    li.title {
+      height: 1.16rem;
+      span {
+        color: #fff;
+        font-weight: 700;
+        background-color: #d3b078 !important;
+      }
+    }
+  }
+  .qitelinian {
+    background-color: #f5f5f5;
+    padding: .8rem .3rem 1rem;
+    h3.title {
+      margin-top: 0;
+    }
+    .shiming {
+      box-sizing: border-box;
+      height: 4.2rem;
+      background-color: #d3b078;
+      color: #fff;
+      padding: .9rem .9rem 0;
+      background-image: url('../../../imgs/qiyejieshao-M.png');
+      background-size: 40%;
+      background-repeat: no-repeat;
+      background-position: right bottom;
+      h4 {
+        position: relative;
+        font-size: .3rem;
+        padding-bottom: .72rem;
+        &::after {
+          content: '';
+          position: absolute;
+          width: .3rem;
+          height: 2px;
+          background-color: #fff;
+          left: 0;
+          bottom: .36rem;
+        }
+      }
+      div {
+        line-height: 1.4;
+      }
+    }
+  }
+  .last {
+    text-align: center;
+    font-size: .24rem;
+    padding: .6rem .3rem 1rem;
+    line-height: 1.4;
+    h4 {
+      font-size: .3rem;
+      font-weight: 700;
+      padding-bottom: .2rem;
+    }
+    p {
+      padding-top: .8rem;
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        width: .5rem;
+        height: 2px;
+        background-color: #000;
+        left: 50%;
+        transform: translate(-50%,0);
+        top: .4rem;
+      }
+    }
+  }
+
+
+  .item-wz {
+    padding-bottom: .8rem;
+    .img-box {
+      height: 3.75rem;
+      overflow: hidden;
+      margin: 0;
+    }
+    h4 {
+      columns: #000;
+      font-weight: 700;
+      font-size: .3rem;
+      padding-bottom: .3rem;
+      padding-top: .3rem;
+    }
+    p {
+      line-height: 1.5;
+      color: #444;
+      word-break: break-all;
+    }
+  }
+  .item-wz-5 {
+    width: 48%;
+    padding-bottom: .5rem;
+    font-size: .24rem;
+    color: #333;
+    .img-box {
+      height: 1.9rem;
+      overflow: hidden;
+      margin: 0;
+      img {
+        height: 100%;
+      }
+    }
+    h4 {
+      columns: #000;
+      font-weight: 700;
+      font-size: .24rem;
+      padding-bottom: .2rem;
+      padding-top: .2rem;
+    }
+  }
+
+  .fengc {
+    padding: .8rem .3rem 0;
+  }
+  
+  .other-fengc {
+    padding: .8rem .3rem .6rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #f5f5f5;
+  }
+  .licheng {
+    margin-top: .8rem;
+  }
+  .bg-item-wz {
+    background-color: #e1c9a3;
+    margin: 0 .3rem .6rem;
+    padding: .3rem .4rem .4rem;
+    border-radius: 5px;
+    .time-title {
+      display: flex;
+      flex-direction: row-reverse;
+      font-size: .24rem;
+      &::after {
+        margin-right: .1rem;
+        content: '';
+        display: inline-block;
+        width: .2rem;
+        height: .2rem;
+        background-image: url('../../../imgs/licheng-icon-1.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+    h4 {
+      font-size: .28rem;
+      color: #000;
+      font-weight: 700;
+      padding-bottom: .12rem;
+      padding-right: 1rem;
+    }
+    p {
+      padding-bottom: .18rem;
+      line-height: 1.4;
+      font-size: .24rem;
+      padding-right: 1rem;
+      position: relative;
+      padding-left: .18rem;
+      &::before {
+        content: '';
+        position: absolute;
+        top: .1rem;
+        left: 0;
+        width: 4px;
+        height: 4px;
+        border-radius: 2px;
+        background-color: #000;
+      }
+    }
+  }
+  .lookmore {
+    min-height: .8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: .9rem 0 1rem;
+    color: #b5b5b5;
+    font-weight: 700;
+    text-align: center;
+    div {
+      padding: 0 .4rem;
+    }
+  }
+}

@@ -1,0 +1,115 @@
+.add_car {
+  color: #1b1b1b;
+  .btns {
+    margin-bottom: 0 !important;
+  }
+  .card{
+    & +.card{
+      margin-top: .5rem;
+    }
+  }
+  .desc{
+    font-size: .22rem;
+    color: #666666;
+    margin-top: .3rem;
+    line-height: 2;
+  }
+  .mybtn{
+    height: .75rem;
+    width: 2.7rem;
+    color: #ffffff;
+    font-size: .3rem;
+    font-weight: bold;
+    border-radius: .375rem;
+    margin: auto;
+    line-height: .75rem;
+    background-color: #d3b07a;
+    text-align: center;
+    margin-top: .4rem;
+  }
+  .inner{
+    .title{
+      font-size: .28rem;
+      color: #000000;
+      font-weight: bold;
+      padding-bottom: .4rem;
+      border-bottom: 1px solid rgba(0,0,0,.1);
+      & +.info{
+        margin-top: .4rem;
+      }
+    }
+    .info{
+      >ul>li{
+        color: #333333;
+        font-size: .24rem;
+        padding: .1rem 0;
+      }
+      .label-box,
+      .label-box-nobg  {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: .4rem;
+        .l {
+          color: #1b1b1b;
+          width: 2.2rem;
+          text-align: left;
+          height: .7rem;
+          line-height: .7rem;
+          font-size: .24rem;
+          position: relative;
+          // padding-left: .2rem;
+          &.justify{
+            text-align: justify;
+          }
+          &::after {
+            content:"";
+            display:inline-block;
+            width:100%;
+          }
+        }
+        .r {
+          display: flex;
+          flex: 1;
+          overflow: hidden;
+          .small-input {
+            flex: 1;
+            margin-right: .2rem;
+          }
+          &>div:last-child {
+            flex: 3;
+          }
+          .my-picker{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+        }
+        .res-r {
+          justify-content: flex-end;
+          font-size: .26rem;
+          text-align: right;
+          font-weight: 700;
+          // color: #e60012;
+        }
+        .res-g {
+          justify-content: flex-end;
+          font-size: .26rem;
+          text-align: right;
+          font-weight: 700;
+          // color: #d3b078;
+        }
+        .label-must { 
+          padding-left: .2rem;
+          &::before {
+            content:"*";
+            color: #d3b07a;
+            position: absolute;
+            left: 0;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}

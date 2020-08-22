@@ -1,0 +1,278 @@
+.newcar {
+  color: #000000;
+}
+.newcar .red {
+  color: #ff0000;
+}
+.newcar .title-img span.ss {
+  color: #000000 !important;
+  left: .9rem;
+}
+.newcar .title-img span.ss::before {
+  background-color: #000000 !important;
+}
+.newcar .tag-img {
+  position: absolute;
+  top: 50%;
+  width: 1rem;
+  left: .9rem;
+  margin-top: -0.12rem;
+}
+.newcar .insurance {
+  font-size: .24rem;
+}
+.newcar .insurance .desc {
+  margin: .8rem .3rem;
+  line-height: 1.6;
+}
+.newcar .insurance .desc.small {
+  margin: .5rem .3rem;
+}
+.newcar .insurance .center {
+  margin: .8rem .3rem;
+  background: #f3f3f3;
+}
+.newcar .insurance .center .a1 {
+  margin: .99rem .3rem 1.35rem;
+}
+.newcar .insurance .center .a1 .title {
+  font-size: .3rem;
+  margin-bottom: .2rem;
+}
+.newcar .insurance .center .a1 p {
+  line-height: 1.6;
+}
+.newcar .insurance .center .a1:last-child {
+  padding-bottom: 1.35rem;
+  margin-bottom: 0;
+}
+.newcar .insurance .huikui {
+  padding: .8rem .3rem;
+  background: #f3f3f3;
+  margin-bottom: .59rem;
+}
+.newcar .insurance .huikui .title {
+  font-size: .4rem;
+  text-align: center;
+  line-height: 1.5;
+}
+.newcar .insurance .huikui .content {
+  line-height: 1.6;
+}
+.newcar .insurance .huikui .line {
+  margin: .5rem 0;
+  background: rgba(27, 27, 27, 0.18);
+  height: 1px;
+}
+.newcar .insurance .imgs {
+  margin: 0 .3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+.newcar .insurance .imgs .plus {
+  width: .8rem;
+  height: .8rem;
+  margin: .5rem auto;
+}
+.newcar .insurance .imgs .big {
+  width: 100%;
+  box-shadow: 0 0 10px #eee;
+}
+.newcar .computed {
+  padding: 0 .3rem;
+}
+.newcar .computed .label-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: .4rem;
+}
+.newcar .computed .label-box .l {
+  width: 2rem;
+  height: .7rem;
+  line-height: .7rem;
+  font-size: .26rem;
+  font-weight: 700;
+  position: relative;
+  padding-left: .2rem;
+  text-align: justify;
+}
+.newcar .computed .label-box .l::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+.newcar .computed .label-box .label-must::before {
+  content: "*";
+  color: #d3b07a;
+  position: absolute;
+  left: 0;
+  height: 100%;
+}
+.newcar .computed .label-box .r {
+  display: flex;
+  flex: 1;
+}
+.newcar .computed .label-box .r .small-input {
+  flex: 1;
+  margin-right: .2rem;
+}
+.newcar .computed .label-box .r > div:last-child {
+  flex: 3;
+}
+.newcar .computed .label-box .r .price {
+  color: #d3b07a;
+  font-size: .3rem;
+}
+.newcar .computed .title {
+  color: #000000;
+  font-size: .3rem;
+  font-weight: 700;
+  margin: .8rem 0 .28rem;
+  padding-bottom: .28rem;
+  border-bottom: .05rem solid red;
+}
+.newcar .computed .title span:first-child {
+  font-size: .4rem;
+  margin-right: .19rem;
+}
+.newcar .computed .step_two .card {
+  width: 6.9rem;
+  border-top: 2px solid #d3b07a;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin: .3rem auto;
+  padding: 0 .3rem .5rem;
+  box-sizing: border-box;
+}
+.newcar .computed .step_two .card .head {
+  color: #000000;
+  font-size: .3rem;
+  font-weight: 700;
+  margin: .4rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.newcar .computed .step_two .card .head .left {
+  display: flex;
+}
+.newcar .computed .step_two .card .head .info {
+  width: .36rem;
+  height: .36rem;
+  background: url(../../../imgs/newcar/icon-info.png) no-repeat;
+  background-size: contain;
+  display: inline-block;
+  margin-left: .1rem;
+}
+.newcar .computed .step_two .card.single {
+  padding-bottom: 0;
+}
+.newcar .computed .step_two .card .ver_line {
+  height: 1px;
+  width: 100%;
+  margin: .4rem 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+.newcar .computed .step_two .card.base {
+  padding: .5rem .3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #000000;
+}
+.newcar .computed .step_two .card.base .column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.newcar .computed .step_two .card.base .column span {
+  margin-top: .19rem;
+}
+.newcar .computed .step_two .card.base .column a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+}
+.newcar .computed .step_two .card.base .line {
+  width: 1px;
+  height: .8rem;
+  background: rgba(0, 0, 0, 0.1);
+}
+.newcar .computed .step_two .btn {
+  height: 1rem;
+  line-height: 1rem;
+  color: #fff;
+  font-size: .4rem;
+  text-align: center;
+  background: #d3b07a;
+  margin-bottom: .6rem;
+  margin-top: .6rem;
+}
+.newcar .computed .step_two .btn.black {
+  background: rgba(0, 0, 0, 0.7);
+  margin-top: .4rem;
+}
+.newcar .computed .step_two .content.large .my-radio {
+  flex-wrap: wrap;
+  height: 1rem;
+}
+.newcar .computed .step_two .content.large .my-radio .item {
+  width: 30% !important;
+}
+.newcar .computed .description {
+  font-size: .24rem;
+  text-align: right;
+  color: #000000;
+  margin: .6rem 0 1rem;
+}
+.newcar .computed .description .price {
+  color: #d3b07a;
+  font-size: .28rem;
+  margin-bottom: .29rem;
+}
+.newcar .computed .description .price span {
+  font-size: .4rem;
+}
+.am-modal-mask + .am-modal-wrap.modal-newcar {
+  touch-action: none;
+}
+.am-modal-mask + .am-modal-wrap.modal-newcar .am-modal-transparent {
+  width: 6.9rem;
+}
+.am-modal-mask + .am-modal-wrap.modal-newcar .am-modal-transparent .am-modal-content .am-modal-body .calc-container {
+  text-align: center;
+  padding-top: .65rem;
+  padding-bottom: .8rem;
+}
+.am-modal-mask + .am-modal-wrap.modal-newcar .am-modal-transparent .am-modal-content .am-modal-body .calc-container img {
+  height: 1.1rem;
+  width: 1.1rem;
+  margin-bottom: .4rem;
+}
+.am-modal-mask + .am-modal-wrap.modal-newcar .am-modal-transparent .am-modal-content .am-modal-body .calc-container .text {
+  font-size: .32rem;
+  color: #000000;
+  line-height: .5rem;
+  margin: auto;
+  max-width: 80%;
+  white-space: normal;
+}
+.am-modal-mask + .am-modal-wrap.modal-newcar .am-modal-transparent .am-modal-content .am-modal-body .calc-container .btn {
+  height: .7rem;
+  line-height: .7rem;
+  width: 2.7rem;
+  border-radius: .35rem;
+  font-size: .3rem;
+  color: #fff;
+  background-color: #d3b078;
+  font-weight: bold;
+  margin: auto;
+  margin-top: .5rem;
+}

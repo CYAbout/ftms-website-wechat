@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="theme-color" content="#000000" />
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <!-- <link href="https://cdn.bootcss.com/Swiper/4.4.6/css/swiper.min.css" rel="stylesheet"> -->
+  <title></title>
+  <style>
+    .loadingzhong {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #d3b07a;
+      background: #eeeeee;
+      font-size: 26px;
+    }
+    body,html {
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(
+      window, document, 'script', 'dataLayer', 'GTM-T4MSV3J'
+    );
+  </script>
+  <!-- End Google Tag Manager -->
+  <!-- Baidu Tag Manager -->
+  <script>
+    var _hmt = _hmt || [];
+    (function () {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?ec4ae7f8ec5cd869cf861fb68cf2024b";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+  <!-- End Baidu Tag Manager -->
+  <script type="text/javascript" src="//api.map.baidu.com/api?v=2.0&ak=cLdBELGluAUEuMu29sCnKZTaTghBDXo5&s=1"></script>
+</head>
+
+<body>
+  <script src="/rem.js"></script>
+  <script src="/jquery-2.0.3.min.js"></script>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T4MSV3J" height="0" width="0" style="display:none;visibility:hidden">
+    </iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div id="root">
+    <div class="loadingzhong">
+      加载中……
+    </div>
+  </div>
+  <script>
+    window.modalScrollTop = 0
+    window.myModal = function () {
+      window.modalScrollTop = document.scrollingElement.scrollTop ||
+        document.documentElement.scrollTop ||
+        document.body.scrollTop;
+      document.body.classList.add('modal_open_now');
+      document.body.style.top = -window.modalScrollTop + 'px';
+    }
+    window.myModal1 = function () {
+      document.body.classList.remove('modal_open_now');
+      document.scrollingElement.scrollTop = document.documentElement.scrollTop = document.body.scrollTop = window.modalScrollTop;
+    }
+  </script>
+  <!--微信分享-->
+<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script type="text/javascript">
+    function _getShareInfo_(){
+      var url = window.location.href ;
+      $.ajax({
+          // url: "https://homesite.ftms.devbmsoft.cn/Wechat/GetJssdk/getJssdkConfig", // 测试环境
+          url: "https://wx.ftms.com.cn/Wechat/GetJssdk/getJssdkConfig", // 正式环境
+          data: {
+              url: url
+          },
+          type: 'POST',
+          dataType: "json",
+          success: function(res) {
+              setConfig(res,url);
+          }
+      });
+    }
+    function setConfig(wcConfig,url) {
+        //------------jssdk配置-------------------
+        wx.config({
+            debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+            appId: wcConfig.content.appId,
+            timestamp: wcConfig.content.timestamp,
+            nonceStr: wcConfig.content.nonceStr,
+            signature: wcConfig.content.signature,
+            jsApiList: [
+                'onMenuShareQQ',
+                'uploadImage',
+                'chooseImage',
+                'onMenuShareTimeline',
+                'onMenuShareAppMessage',
+                'startRecord',
+                'stopRecord',
+                'translateVoice',
+                'chooseCard',
+                'openCard',
+                'addCard'
+            ]
+        });
+
+        var wxData = {
+            url: url, //获取当前页面
+            // imgurl: "http://homesite.ftms.devbmsoft.cn/Public/Wechat/activity/FriendsCirclePrize/images/wxfx.jpg", // 测试环境
+            imgurl: "http://wx.ftms.com.cn/Public/Wechat/activity/FriendsCirclePrize/images/wxfx.jpg", // 正式环境
+            title: "一汽丰田",
+            desc: "致真至极"
+        }
+
+        var weixinShare = {
+            title: wxData.title,
+            desc: wxData.desc,
+            link: wxData.url,
+            imgUrl: wxData.imgurl,
+            type: '',
+            success: function() {
+                //                   setShare(1);
+                //alert(wxData.title + '分享成功！');
+            },
+            cancel: function() {
+                alert('已取消！');
+            }
+        };
+
+        var qqShare = {
+            title: wxData.title,
+            desc: wxData.desc,
+            link: url,
+            imgUrl: wxData.imgurl
+        };
+
+        var friendShare = {
+            title: wxData.title,
+            link: wxData.url,
+            imgUrl: wxData.imgurl,
+            success: function() {
+                //                  setShare(2);
+                //alert('分享成功！');
+            },
+            cancel: function() {
+                alert('已取消！');
+            }
+        };
+
+        wx.ready(function() {
+            wx.onMenuShareTimeline(friendShare);
+            wx.onMenuShareAppMessage(weixinShare);
+            wx.onMenuShareQQ(qqShare);
+
+        });
+    }
+    _getShareInfo_();
+    window.freshShareInfo = _getShareInfo_;
+</script>
+</body>
+
+</html>

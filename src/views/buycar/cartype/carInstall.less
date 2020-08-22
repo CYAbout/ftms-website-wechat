@@ -1,0 +1,420 @@
+.car-install{
+    width: 100%;
+    background-image: url(../../../imgs/bcgInstall.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    height: 100%;
+    .padding{
+        padding-left: .3rem;
+        padding-right: .3rem;
+    }
+    .border-b{
+        border-bottom: 1px solid rgba(0,0,0,.2);
+    }
+    .hidden{
+        display: none;
+    }
+    .rotate{
+        transform: rotate(180deg);
+    }
+    .car-flex{
+        display: flex;
+        justify-content: center;
+    }
+    .bcg_arrow {
+        background-image: url(../../../imgs/xuanzhuan_arrow.png);
+        // background-color: red;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        // position: absolute;
+        height: 2rem;
+        width: 100%;
+        // top: 58%;
+        // left: 0;
+    }
+    .top-title{
+        padding: .8rem .3rem .45rem .3rem;
+        font-size: .4rem;
+        font-weight: bold;
+        color: #000000;
+        display: flex;
+        align-items: center;
+        img{
+            width: .4rem;
+            margin-left: .1rem;
+            height: .18rem;
+        }
+    }
+    .category{
+        display: flex;
+        align-items: center;
+        overflow-x: scroll;
+        .item{
+            min-width: 1.1rem;
+            font-size: .22rem;
+            color: #000000;
+            flex-shrink: 0;
+            & +.item{
+                margin-left: .5rem;
+            }
+            &.current{
+                padding: .1rem 0;
+                border-bottom: .04rem solid #d3b078;
+                font-size: .26rem;
+                font-weight: bold;
+            }
+        }
+    }
+    .total{
+        font-size: .22rem;
+        font-weight: bold;
+        margin-top: .65rem;
+        .big{
+            font-size: .4rem;
+        }
+    }
+    .xscroll{
+        display: flex;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        margin-top: .3rem;
+        width: 100%;
+        .item{
+            height: 1.6rem;
+            width: 3rem;
+            position: relative;
+            flex-shrink: 0;
+            img{
+                height: 1.6rem;
+                width: 3rem;
+            }
+            .mask{
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                display: none;
+                top: 0;
+                &.show{
+                    display: block;
+                }
+                .top{
+                    display: flex;
+                    .r{
+                        flex-grow: 1;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-end;
+                        .t{
+                            width: 100%;
+                            height: .05rem;
+                            background-color: #d3b075;
+                        }
+                        .r{
+                            width: .05rem;
+                            height: .9rem;
+                            background-color: #d3b075;
+                        }
+                    }
+                    .left{
+                        .img{
+                            height: .4rem;
+                            width:.4rem;
+                            text-align: center;
+                            background-color: #d3b075;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            img{
+                                width: .2rem;
+                                height: .15rem;
+                            }
+                        }
+                        .b{
+                            height: .55rem;
+                            width: .05rem;
+                            background-color: #d3b075;
+                        }
+                    }
+                }
+                .bottom{
+                    width: 100%;
+                    height: .65rem;
+                    background-color: #d3b075;
+                    padding: 0 .6rem;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    box-sizing: border-box;
+                    font-size: .24rem;
+                    font-weight: bold;
+                    color: #ffffff;
+                    img{
+                        height: .24rem;
+                        width: .24rem;
+                    }
+                }
+            }
+            .info{
+                position: absolute;
+                width: 100%;
+                height: .65rem;
+                bottom: 0;
+                display: none;
+                background-color: rgba(27,27,27,.7);
+                font-size: .24rem;
+                font-weight: bold;
+                color: #ffffff;
+                &.show{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                >div{
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    max-width: 100%;
+                }
+            }
+            &:first-child{
+                margin-left: .3rem;
+            }
+            & +.item{
+                margin-left: .1rem;
+            }
+        }
+    }
+    .arrow-l{
+        position: absolute;
+        height: 1.6rem;
+        width: .24rem;
+        left: 0;
+        text-align: center;
+        border-radius: .04rem;
+        transform: translateY(-100%);
+        img{
+            margin-top: .7rem;
+            vertical-align: middle;
+            height: .2rem;
+        }
+    }
+    .arrow-r{
+        position: absolute;
+        height: 1.6rem;
+        width: .24rem;
+        right: 0;
+        text-align: center;
+        border-radius: .04rem;
+        transform: translateY(-100%);
+        img{
+            margin-top: .7rem;
+            vertical-align: middle;
+            height: .2rem;
+        }
+    }
+    .car{
+        margin-top: 2rem;
+        text-align: center;
+        position: relative;
+        width: 6.24rem;
+        height: 3.67rem;
+        >img{
+            width: 6.24rem;
+            // height: 3.67rem;
+            position: relative;
+        }
+        >div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            img {
+                position: absolute;
+            }
+        }
+    }
+    .colors{
+        height: 1rem;
+        width: 5rem;
+        border-radius: .5rem;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        margin-top: 1.4rem;
+        margin-bottom: .8rem;
+        border: #000000 solid .01rem;
+        padding: 0 .5rem;
+        .item{
+            text-align: center;
+            img{
+                height: .5rem;
+                width: .5rem;
+                border-radius: 50%;
+                &.lg{
+                    height: .7rem;
+                    width: .7rem;
+                }
+            }
+            .text{
+                margin-top: .08rem;
+                font-size: .22rem;
+                font-weight: bold;
+                color: #000000;
+            }
+            &.up{
+                transform: translateY(-0.1rem);
+            }
+        }
+    }
+    .select-modal{
+        position: absolute;
+        width: 100%;
+        height: 3.85rem;
+        z-index: 100;
+        .inner{
+            width: 6.9rem;
+            margin: auto;
+            background-color: #ffffff;
+            .up{
+                display: flex;
+                height: .3rem;
+                overflow: hidden;
+                >div{
+                    width:.3rem;
+                    height:.3rem;
+                    transform: rotate(45deg) translateY(.2rem);
+                    background-color: #ffffff;
+                    margin-left: 1.6rem;
+                }
+            }
+            .sel{
+                padding: 0 .3rem;
+                overflow: auto;
+                .title{
+                    padding-top: .4rem;
+                    padding-bottom: .35rem;
+                    font-size: .3rem;
+                    font-weight: bold;
+                    color: #000000;
+                    letter-spacing: .1rem;
+                    text-align: center;
+                    width: 6.15rem;
+                    margin: auto;
+                }
+                >ul {
+                    width: 6.15rem;
+                    margin: auto;
+                    >li{
+                        font-size: .26rem;
+                        color: #000000;
+                        text-align: left;
+                        padding: .3rem;
+                        border-bottom: 1px solid rgba(0,0,0,.2);
+                        &.active{
+                            color: #d3b075;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.am-modal-mask +.am-modal-wrap{
+    touch-action: none;
+    .am-modal-transparent{
+        width: 6.9rem;
+        .am-modal-content{
+            padding-top: 0;
+            .am-modal-body{
+                padding: 0;
+                .car-info{
+                    img{
+                        &.part{
+                            width: 100%;
+                            min-width: 6.9rem;
+                            min-height: 1rem;
+                            margin: auto;
+                        }
+                        &.close{
+                            width: .55rem;
+                            height: .55rem;
+                            border-radius: 50%;
+                            position: absolute;
+                            right: .3rem;
+                            top: .2rem;
+                        }
+                    }
+                    .info{
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 0 .3rem;
+                        margin-top: .4rem;
+                        .l{
+                            font-size: .3rem;
+                            font-weight: bold;
+                            color: #000000;
+                            text-align: left;
+                        }
+                        .r{
+                            font-size: .22rem;
+                            color: #000000;
+                            .price{
+                                font-size: .3rem;
+                                color: #d3b078;
+                            }
+                            .price_span{
+                                font-size:.22rem;
+                                // font-weight: normal;
+                                color: #d3b078;
+                              }
+                        }
+                    }
+                    .desc{
+                        padding: 0 .3rem;
+                        margin: .3rem 0 .6rem 0;
+                        font-size: .24rem;
+                        color: #000000;
+                        text-align: left; 
+                    }
+                }
+                .jiazhuang-modal{
+                    display: flex;
+                    justify-content: center;
+                    .close{
+                        width: .55rem;
+                        height: .55rem;
+                        border-radius: 50%;
+                        position: absolute;
+                        right: .3rem;
+                        top: .2rem;
+                    }
+                    .car{
+                        margin: 1rem 0;
+                        text-align: center;
+                        position: relative;
+                        width: 6.24rem;
+                        height: 3.67rem;
+                        >img{
+                            width: 6.24rem;
+                            // height: 3.67rem;
+                            position: relative;
+                        }
+                        >div {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            z-index: 100;
+                            img {
+                                position: absolute;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

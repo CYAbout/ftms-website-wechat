@@ -1,0 +1,122 @@
+.mine_account_info {
+  .form {
+    .label_box {
+      .l {
+        min-width: 1rem !important;
+      }
+    }
+    .avatar {
+      display: flex;
+      justify-content: center;
+      margin-bottom: .6rem;
+      position: relative;
+      .img {
+        width: 2.14rem;
+        height: 2.14rem;
+        border-radius: 1.07rem;
+        overflow: hidden;
+        position: relative;
+        img {
+          max-width: 100%;
+          max-height:100%;
+          position: absolute;
+          top:50%;
+          left:50%;
+          transform: translate(-50%,-50%)
+        }
+      }
+      .upload-box {
+        position: absolute;
+        z-index: 10;
+        width: 2.14rem;
+        height: 2.14rem;
+        overflow: hidden;
+        border-radius: 1.07rem;
+        // opacity: 1;
+        .am-image-picker-list {
+          padding: 0 !important;
+        }
+        .am-flexbox-item {
+          display: none;
+        }
+        .am-flexbox-item:first-child {
+          margin: 0;
+          display: block;
+          width: 2.14rem;
+          height: 2.14rem;
+        }
+        .am-image-picker-item {
+          background-color: transparent;
+          border: 0 none;
+          &::before,
+          &::after {
+            display: none;
+          }
+        }
+        .am-image-picker-item-remove {
+          top: 0;
+          left: 0;
+          width: 2.14rem;
+          height: 2.14rem;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          opacity: .5;
+        }
+        .am-image-picker-item-content {
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+      .am-image-picker-item-remove {
+        display: none;
+      }
+      // .am-image-picker-list {
+      //   .am-image-picker-upload-btn {
+      //     border: none;
+      //     &:after {
+      //       content: '点击更换'!important;
+      //       width: 100px;
+      //       height: 0;
+      //     }
+      //     &:before {
+      //       display: none;
+      //     }
+      //   }
+      // }
+      // .am-flexbox {
+      //   >.am-flexbox-item {
+      //     &:not(:first-child) {
+      //       display: none;
+      //     }
+      //   }
+      // }
+
+      // .am-image-picker-list {
+      //   .am-flexbox {
+      //     .am-flexbox-item:after {
+      //       display: none;
+      //       content: '点击更换'!important;
+      //     }
+      //   }
+      // }
+      // file:after {
+      //   content: '点击更换'!important;
+      // }
+    }
+  }
+  .tishi {
+      align-items: flex-start;
+    .r {
+      display: flex;
+      flex-direction: column;
+      p {
+        color: #ccc;
+        line-height: 1.2;
+        padding-top: .2rem;
+        font-size: .26rem;
+      }
+    }
+  }
+}

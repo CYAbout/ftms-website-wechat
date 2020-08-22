@@ -1,0 +1,95 @@
+.mine_card {
+  .search_area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: .25rem;
+    // margin: 0 .3rem .5rem;
+    .my-btn {
+      margin-bottom: .25rem;
+      .am-button {
+        width: 2.1rem !important;
+        min-width: 2.1rem !important;
+        margin: 0 0 .13rem 0;
+        font-size: .26rem;
+        color: #000000;
+        background: #ffffff;
+        border: 1px solid #000000;
+      }
+      &.active {
+        .am-button {
+          color: #ffffff;
+          background: #d3b07a;
+          border: none;
+        }
+      }
+    }
+  }
+  .card {
+    padding: .6rem 0 !important;
+    .card_content {
+      box-shadow: 0 0 10px #eee;
+      height: 2.25rem;
+      background: url(../../../imgs/mine-card-bg1.png) no-repeat;
+      background-size: 100% 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: .2rem;
+      &.unused {
+        height: 2.25rem;
+        background: url(../../../imgs/card-unused-bg.png) no-repeat;
+        background-size: contain;
+        margin: .2rem;
+      }
+      .left {
+        text-align: center;
+        // width: 2.45rem;
+        color: #ffffff;
+        position: relative;
+        left: .1rem;
+        width: 2.25rem;
+        .face {
+          font-size: .9rem;
+          margin-bottom: .15rem;
+          .unit {
+            font-size: .45rem;
+          }
+        }
+        .desc {
+          font-size: .22rem;
+          text-align: center;
+        }
+      }
+      .right {
+        flex: 1;
+        margin-left: .4rem;
+        position: relative;
+        height: 100%;
+        top: .2rem;
+        .top {
+          line-height: 1.5;
+          margin-top: .2rem;
+          p {
+            span:last-child {
+              color: #000000;
+              font-weight: bold;
+            }
+          }
+        }
+        .bottom {
+          color: #a0a0a0;
+          font-size: .22rem;
+          margin-top: .55rem;
+        }
+        .used-tag {
+          position: absolute;
+          right: 0;
+          bottom: 0.5rem;
+          width: 1.72rem;
+          height: 1.16rem;
+        }
+      }
+    }
+  }
+}

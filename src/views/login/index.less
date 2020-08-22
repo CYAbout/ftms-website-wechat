@@ -1,0 +1,233 @@
+.login,
+.forgetpwd,
+.register {
+  // background-image: url('../../imgs/login-bg.png');
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: cover;
+  // min-height: 100vh;
+  // padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  a {
+    color: #d3b078;
+  }
+  .icon-input-phone {
+    .my-input {
+      // &::before {
+      //   background-image: url('../../imgs/login-icon-1.png');
+      // }
+    }
+  }
+  .icon-input-picnum {
+    .my-input {
+      // input {
+      //   border-bottom-right-radius: 0;
+      //   border-top-right-radius: 0;
+      //   border-right-color: #dcdcdc;
+      // }
+      // &::before {
+      //   background-image: url('../../imgs/login-icon-2.png');
+      // }
+    }
+  }
+  .icon-input-msg {
+    .my-input {
+      // margin-right: .1rem;
+      // &::before {
+      //   background-image: url('../../imgs/login-icon-3.png');
+      // }
+    }
+  }
+  .icon-input-user {
+    .my-input {
+      // &::before {
+      //   background-image: url('../../imgs/login-icon-4.png');
+      // }
+    }
+  }
+  .icon-input-pwd {
+    .my-input {
+      // &::before {
+      //   background-image: url('../../imgs/login-icon-5.png');
+      // }
+    }
+  }
+  .icon-input-pwdt {
+    .my-input {
+      // &::before {
+      //   background-image: url('../../imgs/login-icon-6.png');
+      // }
+    }
+  }
+  .icon-input {
+    // margin-bottom: .26rem;
+    position: relative;
+    display: flex;
+    .my-input {
+      position: relative;
+      flex: 1;
+      // &::before {
+      //   content:'';
+      //   display: inline-block;
+      //   height: .44rem;
+      //   width: .26rem;
+      //   padding-right: .3rem;
+      //   position: absolute;
+      //   left: .36rem;
+      //   top: 50%;
+      //   transform: translate(0,-50%);
+      //   background-repeat: no-repeat;
+      //   background-size: contain;
+      //   background-position: left center;
+      //   background-origin: content-box;
+      //   border-right: 1px solid #eee;
+      // }
+    }
+    input {
+      border-color: #b5b5b5;
+      // border-radius: .35rem;
+      // padding-left: 1.2rem;
+    }
+  }
+  .c {
+    // margin: 0 .3rem;
+    background-color: #fff;
+    width: 100%;
+    // padding: 0 .3rem;
+    height: auto;
+    > div.title {
+      background-color: rgba(0,0,0, 0.05);
+      // width: 100%;
+      height: 2rem;
+      padding: 0.3rem;
+      position: relative;
+      h3 {
+        font-size: .6rem;
+        font-weight: 700;
+        text-align: left;
+        margin-top: 0.5rem;
+        margin-bottom: 0.15rem;
+      }
+      p {
+        font-size: .4rem;
+        color: #bbb;
+        text-align: left;
+      }
+      span {
+        position: absolute;
+        top: 45%;
+        right: 20%;
+        background-image: url(../../../src/imgs/忘记密码锁.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        display: block;
+        height: 0.8rem;
+        width: 0.6rem;
+      }
+    }
+  }
+  .my-btn {
+    width: 6.5rem;
+    margin-left: 0.5rem;
+    .am-button {
+      margin: .3rem 0 .5rem;
+    }
+  }
+  .get-btn {
+    position: absolute;
+    top: 50%;
+    right: 7%;
+    margin-top: -0.35rem;
+    box-sizing: border-box;
+    height: .7rem;
+    font-size: .26rem;
+    color: rgb(27,27,27);
+    background-color: rgb(220,220,220);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .33rem;
+    width: 1.8rem;
+    &.able{
+      background-color: #d3b078;
+      color: #fff;
+    }
+  }
+  .picnum-btn {
+    position: absolute;
+    top: 50%;
+    right: 7%;
+    margin-top: -0.35rem;
+    box-sizing: border-box;
+    height: .7rem;
+    color: #1b1b1b;
+    background-color: #dcdcdc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // border-bottom-right-radius: .33rem;
+    // border-top-right-radius: .33rem;
+    width: 1.8rem;
+    border: 1px solid #999;
+    border-left: 0 none;
+    overflow: hidden;
+    img {
+      max-width: 100%;
+      height: 100%;
+    }
+  }
+  .toregister {
+    color: #b5b5b5;
+    text-align: center;
+    font-size: .26rem
+  }
+  .agree {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .26rem;
+    color: #1b1b1b;
+    span {
+      color: #d3b078;
+    }
+  }
+  .forget-link {
+    display: flex;
+    justify-content: center;
+    padding: .2rem 0 .1rem;
+    font-size: .26rem;
+  }
+  .fpwd-box {
+    min-height: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.5rem;
+    .icon-input {
+      width: 100%;
+    }
+  }
+  .success {
+    .img {
+      width: 1.8rem;
+      height: 1.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: .3rem;
+      border: 2px solid #d3b078;
+      border-radius: .9rem;
+      img {
+        width: 60%;
+      }
+
+    }
+    .txt {
+      font-size: .44rem;
+      color: #000;
+      font-weight: 500;
+    }
+  }
+}

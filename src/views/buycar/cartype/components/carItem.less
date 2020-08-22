@@ -1,0 +1,104 @@
+.car-item{
+    width: 3.15rem;
+    .border-b{
+        border-bottom: 1px solid rgba(0,0,0,.2);
+    }
+    .w-100{
+        width: 100%;
+    }
+    .car-tag{
+        display: flex;
+        justify-content: space-between;
+        height: .6rem;
+        .new{
+            width: .65rem;
+            height: .6rem;
+        }
+        .show{
+            width: .85rem;
+            height: .6rem;
+        }
+    }
+    .car-pic{
+        margin-top: .15rem;
+        img{
+            width: 3.15rem;
+            height: 1.5rem;
+        }
+    }
+    .car-name{
+        color: #000000;
+        font-size: .30rem;
+        text-align: center;
+        padding-top: .25rem;
+        padding-bottom: .15rem;
+        font-weight: bold;
+    }
+    .car-price{
+        font-size: .22rem;
+        color: rgba(0,0,0,.8);
+        padding: .25rem 0;
+        text-align: center;
+        white-space: nowrap;
+    }
+    .car-btn{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        padding-top: .3rem;
+        justify-content:space-between;
+        .car-compare_xq{
+            width:2.2rem;
+            color: #000000;
+            font-size: .30rem;
+            font-weight: bold;
+            text-align: center;
+            height: .64rem;
+            line-height: .64rem;
+            border: 1px solid #000000;
+            border-radius: .32rem;
+            margin-left:0.1rem;
+            a {
+                color: #333;
+            }
+            &.active{
+                color: #ffffff;
+                background-color: #d3b078;
+                border-color: #d3b078;
+            }
+            img{
+                margin-right: .15rem;
+                width: .3rem;
+                height: .3rem;
+                vertical-align: middle
+            }
+            >span{
+                line-height: .64rem;
+                display: inline-block;
+                letter-spacing: .05rem;
+            }
+        }
+        .car-compare{
+            width:.64rem;
+            height: .64rem;
+            line-height: .64rem;
+            border: 1px solid #000000;
+            border-radius: .32rem;
+            text-align: center;
+            margin-right:0.1rem;
+            font-size: .2rem;
+            font-weight: bold;
+            img{
+                margin:0 auto;
+                width: .3rem;
+                height: .3rem;
+                vertical-align: middle
+            }
+            &.active{
+                color: #ffffff;
+                background-color: #d3b078;
+                border-color: #d3b078;
+            }
+        }
+    }
+}
